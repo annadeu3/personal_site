@@ -1,0 +1,43 @@
+h3
+	@extend %small-bold
+	color: $accent
+	text-align: center
+	padding: 75px 0 30px
+
+.face-lockup
+	max-width: 780px
+	+display(flex)
+	margin: 0 auto
+	+align-items(center)
+	+justify-content(space-between)
+
+	.face-img
+		+size(200px)
+		border-radius: 50%
+		background-image: url(../img/FullSizeREnder-3.jpg)
+		background-size: cover
+		margin: 0 auto
+
+
+@media screen and (max-width: 650px)
+	.face-lockup
+		display: block
+		text-align: center
+
+	div
+		display: inline-block
+
+	.face-img
+		display: block
+		background:
+			position: center center
+			repeat: no-repeat
+		margin: 0 auto 
+
+.blurb
+	max-width: 620px
+	padding: 0 15px
+	margin: 50px auto
+	font-size: 24px
+	text-align: center
+	font-weight: 300
