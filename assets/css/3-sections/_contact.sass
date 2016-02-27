@@ -4,14 +4,14 @@ form
 	padding: 0 20px
 
 	input, textarea
-		border: 3px solid $accent
+		border: 2px solid $accent
 		width: 100%
 		+box-sizing(border-box)
 		padding: 10 px
 		-webkit-appearance: none
 		-moz-appearance: none
 		appearance: none
-		font-soze: 16px
+		font-size: 16px
 
 		&:focus
 			outline: none
@@ -26,3 +26,33 @@ form
 
 	[type="submit"]
 		background: $accent
+		color: white
+		font-size: 18px
+		text-transform: uppercase
+		width: 33%
+
+		&:hover
+			background: $accent-light
+
+	.contact-infor-group
+		label
+			width: 50%
+			float: left
+			+box-sizing(border-box)
+
+	label
+		display: block
+		margin-bottom: 20px
+
+		span
+			display: block
+
+@media (max-width: 541px)
+	form
+		.contact-info-group
+
+		label
+			width: 100%
+
+		[type="submit"]
+			width: 100%
